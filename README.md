@@ -28,6 +28,8 @@ Our goal, as with all of these exercises, is to find and fix the scrollburglar, 
 
 **NOTE:** This is a Tailwind project, but we aren't running the Tailwind build process. As a result, you won't be able to use Tailwind utilities. Instead, you should write CSS the "typical" way.
 
+**Solution**: The horizontal overflow is caused by the image on mobile. To fix it, we can apply `max-width: min(100%, 28rem)`, or for a more Tailwind agnostic solution `width: 100%;` but account for if the image is smaller than 100% on mobile by using object-fit: none if filling isn't desired.
+
 ## Exercise 2: Warp and Weave
 
 Warp and Weave is an online course that teaches weavers how to use color effectively. It's a wonderful site created by Tien Chiu. It also has a horizontal overflow on mobile. Your goal is to fix it.
