@@ -36,6 +36,10 @@ Warp and Weave is an online course that teaches weavers how to use color effecti
 
 This page was built using a site builder, and the markup is a bit of a mess. Feel free to fix this solution in the devtools by adding CSS or deleting superfluous HTML elements.
 
+**Solution**: I don't know. Seems like it's just hard to find. Not sure what the intention of the div was on mobile, seems like it's best to just hide it w/ display: none, or at least set the inside contents to width: 100%;
+
+It's a positioned stripe flair that shouldn't be present on mobile
+
 ## Exercise 3: Blog example
 
 I created this third and final example, and it's a tricky one!
