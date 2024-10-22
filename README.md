@@ -47,3 +47,11 @@ I created this third and final example, and it's a tricky one!
 Specifically, in addition to removing the horizontal overflow, you must also take care not to break the sticky social icons on desktop:
 
 ![A desktop screen recording, showing icons that sit to the left of the content, and become anchored to the viewport on scroll](./docs/sticky-icons.gif)
+
+**Solution**: Not satisfied with this one.
+
+Easy to identify. But hmm. Not sure of how to get it working. It's easy to remove the translateX causing the overflow but then it's not the intended effect. overflow: hidden causes it to cut off. I think the best way is a little tedious, maybe opening extra room in the container... but it just still isn't right.
+
+Could also change the positioning.
+
+The actual solutions are a bit more complex. Overflow hidden creates the intended effect only if it's on a higher ancestor than the direct parent (akin to the page). Another way is to make a copy layer and use position relative to get about the same dimensions.
